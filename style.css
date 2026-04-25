@@ -62,8 +62,8 @@ body::before {
 .tool-icon {
     position: absolute;
     font-size: clamp(2rem, 5vw, 4rem);
-    color: var(--primary-blue);
-    opacity: 0.2; /* Clearly visible for confirmation */
+    color: #ff0000; /* TEMPORARY RED FOR TESTING */
+    opacity: 0.5; /* CLEARLY VISIBLE */
     animation: floatTool 20s linear infinite;
 }
 
