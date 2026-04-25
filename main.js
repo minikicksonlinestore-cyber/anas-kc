@@ -20,11 +20,11 @@ navItems.forEach(item => {
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(5, 5, 16, 0.8)';
-        navbar.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.5)';
+        navbar.style.background = 'rgba(8, 11, 18, 0.9)';
+        navbar.style.borderBottom = '1px solid rgba(255, 255, 255, 0.1)';
     } else {
-        navbar.style.background = 'rgba(5, 5, 16, 0.6)';
-        navbar.style.boxShadow = 'none';
+        navbar.style.background = 'rgba(8, 11, 18, 0.7)';
+        navbar.style.borderBottom = '1px solid rgba(255, 255, 255, 0.08)';
     }
 });
 
@@ -46,7 +46,7 @@ const revealOnScroll = () => {
 window.addEventListener('scroll', revealOnScroll);
 revealOnScroll(); // Trigger once on load
 
-// Space Canvas Background (Stars and Particles)
+// Elegant Space Canvas Background
 const canvas = document.getElementById('space-canvas');
 const ctx = canvas.getContext('2d');
 
@@ -67,25 +67,25 @@ class Particle {
     constructor() {
         this.x = Math.random() * width;
         this.y = Math.random() * height;
-        this.size = Math.random() * 2 + 0.5;
-        this.speedX = Math.random() * 0.5 - 0.25;
-        this.speedY = Math.random() * 0.5 - 0.25;
+        this.size = Math.random() * 1.5 + 0.5;
+        this.speedX = Math.random() * 0.2 - 0.1;
+        this.speedY = Math.random() * 0.2 - 0.1;
         
-        // Randomly pick color (blue, purple, cyan, or white)
-        const colors = ['#00f3ff', '#bc13fe', '#0ff0fc', '#ffffff'];
+        // Premium tech colors
+        const colors = ['#3b82f6', '#8b5cf6', '#06b6d4', '#ffffff'];
         this.color = colors[Math.floor(Math.random() * colors.length)];
         
-        this.opacity = Math.random();
-        this.opacityChange = Math.random() * 0.02 - 0.01;
+        this.opacity = Math.random() * 0.5 + 0.1;
+        this.opacityChange = Math.random() * 0.005 - 0.0025;
     }
 
     update() {
         this.x += this.speedX;
         this.y += this.speedY;
 
-        // Mouse Parallax Effect
-        this.x -= mouse.x * 0.0005 * this.size;
-        this.y -= mouse.y * 0.0005 * this.size;
+        // Subtle Mouse Parallax Effect
+        this.x -= mouse.x * 0.0002 * this.size;
+        this.y -= mouse.y * 0.0002 * this.size;
 
         if (this.x < 0) this.x = width;
         if (this.x > width) this.x = 0;
@@ -93,7 +93,7 @@ class Particle {
         if (this.y > height) this.y = 0;
 
         this.opacity += this.opacityChange;
-        if (this.opacity < 0.1 || this.opacity > 1) {
+        if (this.opacity < 0.1 || this.opacity > 0.6) {
             this.opacityChange *= -1;
         }
     }
@@ -104,16 +104,12 @@ class Particle {
         ctx.fillStyle = this.color;
         ctx.globalAlpha = this.opacity;
         ctx.fill();
-        
-        // Add glow
-        ctx.shadowBlur = 10;
-        ctx.shadowColor = this.color;
     }
 }
 
 const initParticles = () => {
     particles = [];
-    const particleCount = Math.floor(width * height / 15000); // Responsive amount
+    const particleCount = Math.floor(width * height / 20000); // Less particles for cleaner look
     for (let i = 0; i < particleCount; i++) {
         particles.push(new Particle());
     }
@@ -129,10 +125,10 @@ window.addEventListener('mousemove', (e) => {
 const animate = () => {
     ctx.clearRect(0, 0, width, height);
     
-    // Draw deep space background gradient
+    // Draw deep slate background gradient
     const gradient = ctx.createRadialGradient(width/2, height/2, 0, width/2, height/2, width);
-    gradient.addColorStop(0, '#0a0a1a');
-    gradient.addColorStop(1, '#020205');
+    gradient.addColorStop(0, '#111827');
+    gradient.addColorStop(1, '#080b12');
     
     ctx.fillStyle = gradient;
     ctx.globalAlpha = 1;
