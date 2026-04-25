@@ -19,12 +19,11 @@ navItems.forEach(item => {
 // Navbar background blur on scroll
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
+    // Colors are now handled primarily by CSS for consistency
     if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(8, 11, 18, 0.9)';
-        navbar.style.borderBottom = '1px solid rgba(255, 255, 255, 0.1)';
+        navbar.style.background = 'rgba(15, 23, 42, 0.95)'; // Matches dark navy header
     } else {
-        navbar.style.background = 'rgba(8, 11, 18, 0.7)';
-        navbar.style.borderBottom = '1px solid rgba(255, 255, 255, 0.08)';
+        navbar.style.background = '#0f172a';
     }
 });
 
@@ -125,14 +124,7 @@ window.addEventListener('mousemove', (e) => {
 const animate = () => {
     ctx.clearRect(0, 0, width, height);
     
-    // Draw deep slate background gradient
-    const gradient = ctx.createRadialGradient(width/2, height/2, 0, width/2, height/2, width);
-    gradient.addColorStop(0, '#111827');
-    gradient.addColorStop(1, '#080b12');
-    
-    ctx.fillStyle = gradient;
-    ctx.globalAlpha = 1;
-    ctx.fillRect(0, 0, width, height);
+    // Background gradient removed to allow CSS grid and icons to show through
     
     particles.forEach(particle => {
         particle.update();
