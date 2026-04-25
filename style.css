@@ -124,12 +124,10 @@ p { color: var(--text-secondary); font-size: 1.05rem; font-weight: 400; }
     top: 0; left: 0;
     width: 100%;
     z-index: 1000;
-    background: #1e3a8a;
-    backdrop-filter: blur(16px);
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-    padding: 1.2rem 0;
+    background: #0f172a; /* Professional Dark Navy Header */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem 0;
     transition: var(--transition-smooth);
-    box-shadow: 0 4px 20px rgba(30, 58, 138, 0.3);
 }
 .nav-container {
     max-width: 1200px;
@@ -139,12 +137,17 @@ p { color: var(--text-secondary); font-size: 1.05rem; font-weight: 400; }
     justify-content: space-between;
     align-items: center;
 }
-.logo { font-size: 1.5rem; font-weight: 800; text-decoration: none; letter-spacing: -0.5px; color: #ffffff; }
+.logo { 
+    font-size: 1.5rem; 
+    font-weight: 800; 
+    text-decoration: none; 
+    letter-spacing: -0.5px; 
+    color: #ffffff !important; /* Logo text color changed to white to complement the dark header */
+}
 .nav-links { list-style: none; display: flex; gap: 2rem; }
-
 .nav-links a {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.85);
+    color: rgba(255, 255, 255, 0.8); /* Link text changed to slightly transparent white */
     font-weight: 500;
     font-size: 0.95rem;
     transition: color 0.3s ease;
@@ -155,8 +158,9 @@ p { color: var(--text-secondary); font-size: 1.05rem; font-weight: 400; }
     position: absolute;
     bottom: -5px; left: 0;
     width: 0; height: 2px;
-    background: #7dd3fc;
+    background: var(--neon-blue);
     transition: width 0.3s ease;
+    box-shadow: 0 0 8px var(--neon-blue);
 }
 .nav-links a:hover::after { width: 100%; }
 .nav-links a:hover { color: #ffffff; }
@@ -435,7 +439,7 @@ p { color: var(--text-secondary); font-size: 1.05rem; font-weight: 400; }
         position: fixed;
         top: 0; right: -100%;
         height: 100vh; width: 100%;
-        background: #1e3a8a;
+        background: rgba(238, 242, 255, 0.98);
         backdrop-filter: blur(20px);
         flex-direction: column;
         justify-content: center;
