@@ -63,7 +63,7 @@ body::before {
     position: absolute;
     font-size: clamp(2rem, 5vw, 4rem);
     color: var(--primary-blue);
-    opacity: 0.04; /* Very subtle */
+    opacity: 0.08; /* Slightly more visible but still subtle */
     animation: floatTool 20s linear infinite;
 }
 
