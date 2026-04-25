@@ -571,6 +571,78 @@ p {
     font-size: 0.95rem;
 }
 
+/* Brand Icon Colors */
+.meta-icon { color: #0082FB; }
+.shopify-icon { color: #96bf48; }
+.google-icon { color: #EA4335; }
+.design-icon { color: #a78bfa; }
+
+.skill-icon {
+    background: linear-gradient(135deg, var(--primary-blue), var(--primary-violet));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 1.2rem;
+    margin-right: 4px;
+}
+
+.contact-icon {
+    font-size: 1.3rem;
+    width: 20px;
+    background: linear-gradient(135deg, var(--primary-blue), var(--primary-violet));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.result-icon {
+    color: var(--primary-blue);
+    margin-right: 6px;
+}
+
+.project-logo {
+    font-size: 2.5rem;
+    margin-bottom: 1.2rem;
+}
+
+/* Social Buttons */
+.btn-social {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition-smooth);
+    border: 1px solid var(--glass-border);
+}
+
+.linkedin-btn {
+    background: rgba(10, 102, 194, 0.15);
+    color: #0a66c2;
+    border-color: rgba(10, 102, 194, 0.3);
+}
+
+.linkedin-btn:hover {
+    background: rgba(10, 102, 194, 0.25);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(10, 102, 194, 0.3);
+}
+
+.instagram-btn {
+    background: rgba(225, 48, 108, 0.1);
+    color: #e1306c;
+    border-color: rgba(225, 48, 108, 0.3);
+}
+
+.instagram-btn:hover {
+    background: rgba(225, 48, 108, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(225, 48, 108, 0.3);
+}
+
 /* Projects */
 .projects-grid {
     display: grid;
