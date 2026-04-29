@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects | Muhammed Anas</title>
+    <meta name="description" content="Portfolio of Muhammed Anas — Shopify store builds and Meta Ads campaign results.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .projects-page-hero {
+            padding: 120px 1rem 40px;
+            text-align: center;
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--neon-blue);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            transition: var(--transition-smooth);
+        }
+        .back-btn:hover { opacity: 0.7; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="glass-nav" id="mainNav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">M. Anas /&gt;</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn" id="mobileMenuBtn" onclick="document.getElementById('navLinks').classList.toggle('active'); this.classList.toggle('active')">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="projects-page-hero">
+        <a href="index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+        <h1 class="section-title" style="font-size: clamp(2rem, 6vw, 3rem);">My <span class="text-gradient">Projects</span></h1>
+        <p class="text-muted mx-auto max-w-600">Real client projects — from full Shopify store builds to high-performing Meta Ads campaigns.</p>
+    </div>
+
+    <!-- Shopify Projects -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <h3 class="subsection-title"><i class="fa-brands fa-shopify" style="color: #96bf48;"></i> Shopify Stores</h3>
+            <div class="projects-grid">
+                <a href="https://www.jvecom.in" target="_blank" class="glass-panel project-card">
+                    <div class="project-icon" style="background: rgba(150, 191, 72, 0.1);"><i class="fa-brands fa-shopify" style="color: #96bf48;"></i></div>
+                    <h4>JV Ecom</h4>
+                    <p class="text-muted">Full Shopify eCommerce store — product listings, payment integration, and responsive design.</p>
+                    <span class="project-link">jvecom.in <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                </a>
+                <a href="https://www.zairabyfameda.com" target="_blank" class="glass-panel project-card">
+                    <div class="project-icon" style="background: rgba(150, 191, 72, 0.1);"><i class="fa-brands fa-shopify" style="color: #96bf48;"></i></div>
+                    <h4>Zaira by Fameda</h4>
+                    <p class="text-muted">Fashion eCommerce store with custom branding, product photography integration, and optimized checkout.</p>
+                    <span class="project-link">zairabyfameda.com <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                </a>
+                <a href="https://www.shalozofficial.com" target="_blank" class="glass-panel project-card">
+                    <div class="project-icon" style="background: rgba(150, 191, 72, 0.1);"><i class="fa-brands fa-shopify" style="color: #96bf48;"></i></div>
+                    <h4>Shaloz Official</h4>
+                    <p class="text-muted">Premium fashion brand store — custom theme, SEO-optimized pages, and mobile-first design.</p>
+                    <span class="project-link">shalozofficial.com <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meta Ads Results -->
+    <section class="section">
+        <div class="container">
+            <h3 class="subsection-title"><i class="fa-brands fa-meta" style="color: #0081FB;"></i> Meta Ads Campaign Results</h3>
+            <div class="meta-ads-grid">
+                <div class="glass-panel meta-ads-card">
+                    <img src="meta-ads-1.jpg" alt="Meta Ads Campaign 1 — 58 Conversations, 13.6K Reach" class="meta-ads-img">
+                    <div class="meta-ads-stats">
+                        <div class="meta-stat"><span class="meta-stat-value">58</span><span class="meta-stat-label">Conversations</span></div>
+                        <div class="meta-stat"><span class="meta-stat-value">₹7.75</span><span class="meta-stat-label">Cost/Conv</span></div>
+                        <div class="meta-stat"><span class="meta-stat-value">13.6K</span><span class="meta-stat-label">Reach</span></div>
+                    </div>
+                </div>
+                <div class="glass-panel meta-ads-card">
+                    <img src="meta-ads-2.jpg" alt="Meta Ads Campaign 2 — 20 Conversations, 3.5K Reach" class="meta-ads-img">
+                    <div class="meta-ads-stats">
+                        <div class="meta-stat"><span class="meta-stat-value">20</span><span class="meta-stat-label">Conversations</span></div>
+                        <div class="meta-stat"><span class="meta-stat-value">₹7.80</span><span class="meta-stat-label">Cost/Conv</span></div>
+                        <div class="meta-stat"><span class="meta-stat-value">3.5K</span><span class="meta-stat-label">Reach</span></div>
+                    </div>
+                </div>
+                <div class="glass-panel meta-ads-card">
+                    <img src="meta-ads-3.jpg" alt="Meta Ads Campaign 3 — 27 Conversations, 4.8K Reach" class="meta-ads-img">
+                    <div class="meta-ads-stats">
+                        <div class="meta-stat"><span class="meta-stat-value">27</span><span class="meta-stat-label">Conversations</span></div>
+                        <div class="meta-stat"><span class="meta-stat-value">₹6.28</span><span class="meta-stat-label">Cost/Conv</span></div>
+                        <div class="meta-stat"><span class="meta-stat-value">4.8K</span><span class="meta-stat-label">Reach</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="text-align: center; padding: 2rem 1rem; color: var(--text-secondary); font-size: 0.85rem;">
+        <p>&copy; 2026 Muhammed Anas. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
